@@ -1,6 +1,9 @@
 import Image from "next/image"
+import { useTranslations } from 'next-intl'
 
 export function AboutSection() {
+  const t = useTranslations('about')
+
   return (
     <section className="py-20 bg-primary">
       <div className="container mx-auto px-4">
@@ -8,19 +11,11 @@ export function AboutSection() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <h2 className="text-5xl md:text-6xl font-bold text-white">
-                Welcome to Food Very Coffee
+                {t('title')}
               </h2>
               <div className="space-y-6 text-lg text-white/90 leading-relaxed">
                 <p>
-                  Located in the heart of Las Terrenas, we're passionate about serving exceptional breakfast and
-                  coffee to our community.
-                </p>
-                <p>
-                  Every dish is prepared with care using fresh, local ingredients. Our coffee is sourced from the
-                  finest Dominican beans and brewed to perfection.
-                </p>
-                <p>
-                  Whether you're starting your day or taking a break, we're here to make your experience memorable.
+                  {t('description')}
                 </p>
               </div>
             </div>

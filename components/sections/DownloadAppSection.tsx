@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui/button"
+import { useTranslations } from 'next-intl'
 
 export function DownloadAppSection() {
+  const t = useTranslations('downloadApp')
+
   return (
     <section className="py-20 bg-linear-to-br from-primary/5 to-primary/10">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-8 mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-primary">Download the App</h2>
+            <h2 className="text-5xl md:text-6xl font-bold text-primary">{t('title')}</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Get the Food Very Coffee app for easy ordering, exclusive deals, and seamless pickup. 
-              Available on iOS and Android.
+              {t('subtitle')}
             </p>
           </div>
 
@@ -24,8 +26,8 @@ export function DownloadAppSection() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground">Easy Ordering</h3>
-                    <p className="text-muted-foreground">Browse our menu and place orders in just a few taps</p>
+                    <h3 className="text-xl font-semibold text-foreground">{t('features.easyOrdering.title')}</h3>
+                    <p className="text-muted-foreground">{t('features.easyOrdering.description')}</p>
                   </div>
                 </div>
 
@@ -36,8 +38,8 @@ export function DownloadAppSection() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground">Quick Pickup</h3>
-                    <p className="text-muted-foreground">Order ahead and skip the line with our pickup system</p>
+                    <h3 className="text-xl font-semibold text-foreground">{t('features.quickPickup.title')}</h3>
+                    <p className="text-muted-foreground">{t('features.quickPickup.description')}</p>
                   </div>
                 </div>
 
@@ -48,8 +50,8 @@ export function DownloadAppSection() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground">Exclusive Deals</h3>
-                    <p className="text-muted-foreground">Get special offers and loyalty rewards only available in the app</p>
+                    <h3 className="text-xl font-semibold text-foreground">{t('features.exclusiveDeals.title')}</h3>
+                    <p className="text-muted-foreground">{t('features.exclusiveDeals.description')}</p>
                   </div>
                 </div>
               </div>
@@ -58,7 +60,7 @@ export function DownloadAppSection() {
             {/* Download Buttons */}
             <div className="space-y-8">
               <div className="text-center space-y-6">
-                <h3 className="text-2xl font-semibold text-foreground">Get it on your device</h3>
+                <h3 className="text-2xl font-semibold text-foreground">{t('downloadTitle')}</h3>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button
@@ -70,7 +72,7 @@ export function DownloadAppSection() {
                     </svg>
                     <div className="text-left">
                       <div className="text-xs">Download on the</div>
-                      <div className="text-lg font-semibold">App Store</div>
+                      <div className="text-lg font-semibold">{t('appStore')}</div>
                     </div>
                   </Button>
 
@@ -83,14 +85,14 @@ export function DownloadAppSection() {
                     </svg>
                     <div className="text-left">
                       <div className="text-xs">Get it on</div>
-                      <div className="text-lg font-semibold">Google Play</div>
+                      <div className="text-lg font-semibold">{t('googlePlay')}</div>
                     </div>
                   </Button>
                 </div>
 
                 <div className="pt-4">
                   <p className="text-sm text-muted-foreground">
-                    Scan QR code to download
+                    {t('qrCode')}
                   </p>
                   <div className="mt-4 inline-block p-4 bg-white rounded-lg shadow-sm">
                     <div className="w-24 h-24 bg-gray-200 rounded flex items-center justify-center">

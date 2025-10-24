@@ -1,23 +1,24 @@
 import { Card } from "@/components/ui/card"
 import { Coffee, MapPin, Clock } from "lucide-react"
+import { useTranslations } from 'next-intl'
 
 export function LocationHoursSection() {
+  const t = useTranslations('location')
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16 text-gray-900">Visit Us</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16 text-gray-900">{t('title')}</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 text-center space-y-6 hover:shadow-lg transition-shadow bg-primary rounded-lg shadow-sm">
               <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto">
                 <MapPin className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold text-white">Location</h3>
+              <h3 className="text-2xl font-semibold text-white">{t('contact.title')}</h3>
               <p className="text-white/90 leading-relaxed">
-                Las Terrenas
-                <br />
-                Dominican Republic
+                {t('address')}
               </p>
             </Card>
 
@@ -25,11 +26,11 @@ export function LocationHoursSection() {
               <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto">
                 <Clock className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold text-white">Hours</h3>
+              <h3 className="text-2xl font-semibold text-white">{t('hours.title')}</h3>
               <p className="text-white/90 leading-relaxed">
-                Monday - Sunday
+                {t('hours.monday')}
                 <br />
-                7:00 AM - 2:00 PM
+                {t('hours.weekend')}
               </p>
             </Card>
 
@@ -37,9 +38,9 @@ export function LocationHoursSection() {
               <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto">
                 <Coffee className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold text-white">Order Ahead</h3>
+              <h3 className="text-2xl font-semibold text-white">{t('contact.title')}</h3>
               <p className="text-white/90 leading-relaxed">
-                Download our app for easy ordering and rewards
+                {t('contact.phone')} & {t('contact.email')}
               </p>
             </Card>
           </div>

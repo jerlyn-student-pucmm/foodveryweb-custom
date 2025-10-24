@@ -1,14 +1,17 @@
 import { Card } from "@/components/ui/card"
 import Image from "next/image"
+import { useTranslations } from 'next-intl'
 
 export function FeaturedItemsSection() {
+  const t = useTranslations('featuredItems')
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900">Nuestras Especialidades</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900">{t('title')}</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Desayuno fresco y café preparado por expertos para comenzar tu día de la mejor manera
+            {t('subtitle')}
           </p>
         </div>
 
@@ -23,9 +26,9 @@ export function FeaturedItemsSection() {
               />
             </div>
             <div className="p-6 space-y-3">
-              <h3 className="text-2xl font-semibold text-gray-900">Platos de Desayuno</h3>
+              <h3 className="text-2xl font-semibold text-gray-900">{t('breakfast.title')}</h3>
               <p className="text-gray-600 leading-relaxed">
-                Combinaciones abundantes de desayuno con ingredientes locales frescos
+                {t('breakfast.description')}
               </p>
             </div>
           </Card>
@@ -40,8 +43,8 @@ export function FeaturedItemsSection() {
               />
             </div>
             <div className="p-6 space-y-3">
-              <h3 className="text-2xl font-semibold text-gray-900">Café Especial</h3>
-              <p className="text-gray-600 leading-relaxed">Granos de café premium tostados a la perfección</p>
+              <h3 className="text-2xl font-semibold text-gray-900">{t('coffee.title')}</h3>
+              <p className="text-gray-600 leading-relaxed">{t('coffee.description')}</p>
             </div>
           </Card>
 
@@ -55,9 +58,9 @@ export function FeaturedItemsSection() {
               />
             </div>
             <div className="p-6 space-y-3">
-              <h3 className="text-2xl font-semibold text-gray-900">Pasteles Frescos</h3>
+              <h3 className="text-2xl font-semibold text-gray-900">{t('pastries.title')}</h3>
               <p className="text-gray-600 leading-relaxed">
-                Horneados diariamente con amor y los mejores ingredientes
+                {t('pastries.description')}
               </p>
             </div>
           </Card>
