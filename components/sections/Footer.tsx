@@ -10,7 +10,7 @@ export function Footer() {
       <div className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h3 className="text-3xl font-bold text-green-600">Food Very Coffee</h3>
+            <h3 className="text-3xl font-bold text-green-600">FoodVery Coffee</h3>
             <p className="text-gray-600 text-lg">{t('description')}</p>
             <div className="flex justify-center gap-8 pt-4">
               <a href="#" className="text-gray-600 hover:text-green-600 transition-colors text-lg">

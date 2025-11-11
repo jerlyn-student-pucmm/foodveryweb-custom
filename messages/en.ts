@@ -1,6 +1,6 @@
 export default {
   "hero": {
-    "title": "Food Very",
+    "title": "FoodVery",
     "subtitle": "Coffee",
     "description": "Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
     "menuButton": "View Menu",
@@ -25,7 +25,7 @@ export default {
   "about": {
     "title": "About Us",
     "subtitle": "An authentic experience in Las Terrenas",
-    "description": "At Food Very Coffee, we are dedicated to providing a unique gastronomic experience that combines Dominican tradition with fresh ingredients and modern techniques. Located in the heart of Las Terrenas, we are the perfect place to start your day with the best breakfast and coffee.",
+    "description": "At FoodVery Coffee, we are dedicated to providing a unique gastronomic experience that combines Dominican tradition with fresh ingredients and modern techniques. Located in the heart of Las Terrenas, we are the perfect place to start your day with the best breakfast and coffee.",
     "values": {
       "fresh": {
         "title": "Fresh Ingredients",
@@ -58,7 +58,7 @@ export default {
   },
   "downloadApp": {
     "title": "Download the App",
-    "subtitle": "Get the Food Very Coffee app for easy ordering, exclusive deals, and seamless pickup. Available on iOS and Android.",
+    "subtitle": "Get the FoodVery Coffee app for easy ordering, exclusive deals, and seamless pickup. Available on iOS and Android.",
     "features": {
       "easyOrdering": {
         "title": "Easy Ordering",
@@ -84,19 +84,19 @@ export default {
     "button": "Visit Us Today"
   },
   "footer": {
-    "description": "Food Very Coffee - Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
+    "description": "FoodVery Coffee - Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
     "links": {
       "menu": "Menu",
       "about": "About",
       "contact": "Contact",
       "privacy": "Privacy"
     },
-    "copyright": "© 2024 Food Very Coffee. All rights reserved."
+    "copyright": "© 2024 FoodVery Coffee. All rights reserved."
   },
   "privacy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: December 2024",
-    "introduction": "At Food Very Coffee, we respect your privacy and are committed to protecting your personal information.",
+    "introduction": "At FoodVery Coffee, we respect your privacy and are committed to protecting your personal information.",
     "sections": {
       "information": {
         "title": "Information We Collect",
