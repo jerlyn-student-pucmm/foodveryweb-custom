@@ -8,7 +8,7 @@ WORKDIR /app
 
 COPY package.json pnpm-lock.yaml* ./
 
-RUN pnpm install --frozen-lockfile --prod=false
+RUN pnpm install --frozen-lockfile
 
 FROM base AS builder
 
@@ -20,6 +20,14 @@ COPY . .
 
 RUN pnpm build
 
+FROM base AS prod-deps
+
+WORKDIR /app
+
+COPY package.json pnpm-lock.yaml* ./
+
+RUN pnpm install --frozen-lockfile --prod
+
 FROM base AS runner
 
 WORKDIR /app
@@ -29,14 +37,13 @@ ENV NODE_ENV production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --frozen-lockfile --prod
-
+COPY --from=prod-deps /app/node_modules ./node_modules
 COPY --from=builder /app/next.config.ts ./
 COPY --from=builder /app/i18n.ts ./
 COPY --from=builder /app/messages ./messages
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
+COPY package.json ./
 
 USER nextjs
 
