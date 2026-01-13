@@ -1,21 +1,21 @@
-import { HeroSection } from "@/components/sections/HeroSection"
-import { FeaturedItemsSection } from "@/components/sections/FeaturedItemsSection"
-import { AboutSection } from "@/components/sections/AboutSection"
-import { LocationHoursSection } from "@/components/sections/LocationHoursSection"
-import { DownloadAppSection } from "@/components/sections/DownloadAppSection"
-import { CTASection } from "@/components/sections/CTASection"
-import { Footer } from "@/components/sections/Footer"
+import { Navigation } from "@/components/sections/Navigation";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { CoffeeSection } from "@/components/sections/CoffeeSection";
+import { TropicalBitesSection } from "@/components/sections/TropicalBitesSection";
+import { VisitSection } from "@/components/sections/VisitSection";
+import { Footer } from "@/components/sections/Footer";
+import { DarkModeToggle } from "@/components/DarkModeToggle";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Navigation />
       <HeroSection />
-      <FeaturedItemsSection />
-      <AboutSection />
-      <LocationHoursSection />
-      <DownloadAppSection />
-      <CTASection />
+      <CoffeeSection />
+      <TropicalBitesSection />
+      <VisitSection />
       <Footer />
+      <DarkModeToggle />
     </div>
-  )
+  );
 }

@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: hsl(0 0% 100%);
+  --color-primary: #4B5320;
+  --color-secondary: #A67B5B;
+  --color-background-light: #FDFCF6;
+  --color-background-dark: #1A1C14;
+  --color-background: var(--color-background-light);
   --color-foreground: hsl(222.2 84% 4.9%);
   --color-card: hsl(0 0% 100%);
   --color-card-foreground: hsl(222.2 84% 4.9%);
   --color-popover: hsl(0 0% 100%);
   --color-popover-foreground: hsl(222.2 84% 4.9%);
-  --color-primary: hsl(142 28% 35%);
   --color-primary-foreground: hsl(0 0% 100%);
-  --color-secondary: hsl(210 40% 98%);
   --color-secondary-foreground: hsl(222.2 84% 4.9%);
   --color-muted: hsl(210 40% 98%);
   --color-muted-foreground: hsl(215.4 16.3% 46.9%);
@@ -19,8 +21,8 @@
   --color-destructive-foreground: hsl(210 40% 98%);
   --color-border: hsl(214.3 31.8% 91.4%);
   --color-input: hsl(214.3 31.8% 91.4%);
-  --color-ring: hsl(142 28% 35%);
-  --radius: 0.5rem;
+  --color-ring: #4B5320;
+  --radius: 12px;
 }
 
 @layer base {
@@ -28,7 +30,24 @@
     border-color: hsl(var(--color-border));
   }
   body {
-    background-color: hsl(var(--color-background));
+    background-color: var(--color-background-light);
     color: hsl(var(--color-foreground));
+    font-family: var(--font-sans);
+    transition: background-color 0.3s, color 0.3s;
   }
+  .font-display {
+    font-family: var(--font-display), serif;
+  }
+  .dark body {
+    background-color: var(--color-background-dark);
+    color: hsl(0 0% 100%);
+  }
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
 }
