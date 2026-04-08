@@ -1,10 +1,12 @@
 import { getPublicApiUrl } from "@/lib/env";
 import type {
   AddPointsBody,
+  LookupUserByEmailResponse,
   MenuResponseDTO,
   PlateDTO,
   PlatePhotoUploadResponseDTO,
   PointTransactionDTO,
+  RewardDTO,
   StaffStatusResponse,
   TransactionsPageDTO,
 } from "@/types/admin";
@@ -174,4 +176,62 @@ export const adminApi = {
       `/api/points/transactions?page=${page}&page_size=${pageSize}`,
       token
     ),
+
+  lookupUserByEmail: (token: string, email: string) =>
+    apiGetJson<LookupUserByEmailResponse>(
+      `/api/auth/lookup-user-by-email?email=${encodeURIComponent(email.trim())}`,
+      token
+    ),
+
+  listRewardsStaff: (token: string) =>
+    apiGetJson<RewardDTO[]>("/api/rewards/staff", token),
+
+  createReward: (
+    token: string,
+    body: {
+      name: string;
+      description?: string | null;
+      points_required: number;
+      image_url?: string | null;
+    }
+  ) => apiSendJson<RewardDTO>("/api/rewards/staff", token, body, "POST"),
+
+  updateReward: (
+    token: string,
+    rewardUuid: string,
+    body: {
+      name?: string;
+      description?: string | null;
+      points_required?: number;
+      image_url?: string | null;
+    }
+  ) =>
+    apiSendJson<RewardDTO>(
+      `/api/rewards/staff/uuid/${rewardUuid}`,
+      token,
+      body,
+      "PATCH"
+    ),
+
+  deleteReward: async (token: string, rewardUuid: string) => {
+    const base = getPublicApiUrl().replace(/\/$/, "");
+    const url = `${base}/api/rewards/staff/uuid/${rewardUuid}`;
+    const controller = new AbortController();
+    const t = setTimeout(() => controller.abort(), TIMEOUT_MS);
+    try {
+      const res = await fetch(url, {
+        method: "DELETE",
+        signal: controller.signal,
+        headers: {
+          Accept: "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      if (!res.ok) {
+        throw new Error(await parseError(res));
+      }
+    } finally {
+      clearTimeout(t);
+    }
+  },
 };

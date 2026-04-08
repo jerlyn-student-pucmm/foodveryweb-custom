@@ -53,3 +53,18 @@ export interface PlatePhotoUploadResponseDTO {
   plate: PlateDTO;
   image_url: string;
 }
+
+export interface LookupUserByEmailResponse {
+  user_uid: string;
+  email: string;
+}
+
+export interface RewardDTO {
+  id: number;
+  uuid: string;
+  name: string;
+  description: string | null;
+  points_required: number;
+  image_url: string | null;
+  created_at: string;
+}
