@@ -1,5 +1,5 @@
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import {getLocale, getMessages} from 'next-intl/server';
 import {LanguageSwitcher} from '@/components/LanguageSwitcher';
 import {JsonLdSchema} from '@/components/JsonLdSchema';
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
@@ -47,6 +47,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const messages = await getMessages();
+  const locale = (await getLocale().catch(() => undefined)) ?? 'es';
 
   return (
     <html lang="es" className={`scroll-smooth ${playfairDisplay.variable} ${plusJakartaSans.variable}`}>
@@ -57,7 +58,7 @@ export default async function RootLayout({
       </head>
       <body className="font-sans bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 transition-colors duration-300">
         <JsonLdSchema />
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="fixed top-4 right-4 z-50">
             <LanguageSwitcher />
           </div>
