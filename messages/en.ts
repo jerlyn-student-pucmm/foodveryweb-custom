@@ -1,0 +1,123 @@
+export default {
+  "hero": {
+    "title": "FoodVery",
+    "subtitle": "Coffee",
+    "description": "Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
+    "menuButton": "View Menu",
+    "orderButton": "Order Now"
+  },
+  "featuredItems": {
+    "title": "Featured Specialties",
+    "subtitle": "Our most popular items",
+    "breakfast": {
+      "title": "Complete Breakfast",
+      "description": "Fresh eggs, toast, coffee and more"
+    },
+    "coffee": {
+      "title": "Artisan Coffee",
+      "description": "Selected beans prepared with passion"
+    },
+    "pastries": {
+      "title": "Fresh Pastries",
+      "description": "Homemade bakery every day"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "An authentic experience in Las Terrenas",
+    "description": "At FoodVery Coffee, we are dedicated to providing a unique gastronomic experience that combines Dominican tradition with fresh ingredients and modern techniques. Located in the heart of Las Terrenas, we are the perfect place to start your day with the best breakfast and coffee.",
+    "values": {
+      "fresh": {
+        "title": "Fresh Ingredients",
+        "description": "We use only the best local and fresh ingredients"
+      },
+      "passion": {
+        "title": "Prepared with Passion",
+        "description": "Every dish and drink is prepared with love and attention to detail"
+      },
+      "community": {
+        "title": "Part of the Community",
+        "description": "Proud to be part of the vibrant Las Terrenas community"
+      }
+    }
+  },
+  "location": {
+    "title": "Location & Hours",
+    "subtitle": "Visit us in Las Terrenas",
+    "address": "Las Terrenas, Samaná, Dominican Republic",
+    "hours": {
+      "title": "Opening Hours",
+      "monday": "Monday - Friday: 6:00 AM - 2:00 PM",
+      "weekend": "Saturday - Sunday: 7:00 AM - 3:00 PM"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "phone": "Phone",
+      "email": "Email"
+    }
+  },
+  "downloadApp": {
+    "title": "Download the App",
+    "subtitle": "Get the FoodVery Coffee app for easy ordering, exclusive deals, and seamless pickup. Available on iOS and Android.",
+    "features": {
+      "easyOrdering": {
+        "title": "Easy Ordering",
+        "description": "Browse our menu and place orders in just a few taps"
+      },
+      "quickPickup": {
+        "title": "Quick Pickup",
+        "description": "Order ahead and skip the line with our pickup system"
+      },
+      "exclusiveDeals": {
+        "title": "Exclusive Deals",
+        "description": "Get special offers and loyalty rewards only available in the app"
+      }
+    },
+    "downloadTitle": "Get it on your device",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "qrCode": "Scan QR code to download"
+  },
+  "cta": {
+    "title": "Start Your Day Right",
+    "subtitle": "Join us for breakfast and coffee that will make your morning special",
+    "button": "Visit Us Today"
+  },
+  "footer": {
+    "description": "FoodVery Coffee - Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
+    "links": {
+      "menu": "Menu",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy"
+    },
+    "copyright": "© 2024 FoodVery Coffee. All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: December 2024",
+    "introduction": "At FoodVery Coffee, we respect your privacy and are committed to protecting your personal information.",
+    "sections": {
+      "information": {
+        "title": "Information We Collect",
+        "content": "We collect information you provide directly to us, such as when you create an account, place an order, or communicate with us."
+      },
+      "usage": {
+        "title": "How We Use Your Information",
+        "content": "We use your information to process orders, improve our services, and communicate with you about special offers."
+      },
+      "sharing": {
+        "title": "Sharing Information",
+        "content": "We do not sell or share your personal information with third parties, except when necessary to comply with the law."
+      },
+      "security": {
+        "title": "Security",
+        "content": "We implement appropriate security measures to protect your personal information from unauthorized access."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about this privacy policy, please contact us."
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+export default {
+  "hero": {
+    "title": "FoodVery",
+    "subtitle": "Coffee",
+    "description": "Desayuno y café elaborados con cuidado en Las Terrenas, República Dominicana",
+    "menuButton": "Ver Menú",
+    "orderButton": "Pedir Ahora"
+  },
+  "featuredItems": {
+    "title": "Especialidades Destacadas",
+    "subtitle": "Nuestros productos más populares",
+    "breakfast": {
+      "title": "Desayuno Completo",
+      "description": "Huevos frescos, pan tostado, café y más"
+    },
+    "coffee": {
+      "title": "Café Artesanal",
+      "description": "Granos seleccionados y preparados con pasión"
+    },
+    "pastries": {
+      "title": "Pasteles Frescos",
+      "description": "Panadería casera todos los días"
+    }
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Una experiencia auténtica en Las Terrenas",
+    "description": "En FoodVery Coffee, nos dedicamos a brindar una experiencia gastronómica única que combina la tradición dominicana con ingredientes frescos y técnicas modernas. Ubicados en el corazón de Las Terrenas, somos el lugar perfecto para comenzar tu día con el mejor desayuno y café.",
+    "values": {
+      "fresh": {
+        "title": "Ingredientes Frescos",
+        "description": "Utilizamos solo los mejores ingredientes locales y frescos"
+      },
+      "passion": {
+        "title": "Preparado con Pasión",
+        "description": "Cada plato y bebida se prepara con amor y atención al detalle"
+      },
+      "community": {
+        "title": "Parte de la Comunidad",
+        "description": "Orgullosos de ser parte de la vibrante comunidad de Las Terrenas"
+      }
+    }
+  },
+  "location": {
+    "title": "Ubicación y Horarios",
+    "subtitle": "Visítanos en Las Terrenas",
+    "address": "Las Terrenas, Samaná, República Dominicana",
+    "hours": {
+      "title": "Horarios de Atención",
+      "monday": "Lunes - Viernes: 6:00 AM - 2:00 PM",
+      "weekend": "Sábado - Domingo: 7:00 AM - 3:00 PM"
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "phone": "Teléfono",
+      "email": "Email"
+    }
+  },
+  "downloadApp": {
+    "title": "Descarga la App",
+    "subtitle": "Obtén la app de FoodVery Coffee para pedidos fáciles, ofertas exclusivas y recogida sin complicaciones. Disponible en iOS y Android.",
+    "features": {
+      "easyOrdering": {
+        "title": "Pedidos Fáciles",
+        "description": "Navega nuestro menú y haz pedidos en solo unos toques"
+      },
+      "quickPickup": {
+        "title": "Recogida Rápida",
+        "description": "Ordena con anticipación y evita las filas con nuestro sistema de recogida"
+      },
+      "exclusiveDeals": {
+        "title": "Ofertas Exclusivas",
+        "description": "Obtén ofertas especiales y recompensas de lealtad solo disponibles en la app"
+      }
+    },
+    "downloadTitle": "Consíguela en tu dispositivo",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "qrCode": "Escanea el código QR para descargar"
+  },
+  "cta": {
+    "title": "Comienza tu Día Bien",
+    "subtitle": "Únete a nosotros para desayuno y café que harán especial tu mañana",
+    "button": "Visítanos Hoy"
+  },
+  "footer": {
+    "description": "FoodVery Coffee - Desayuno y café elaborados con cuidado en Las Terrenas, República Dominicana",
+    "links": {
+      "menu": "Menú",
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "privacy": "Privacidad"
+    },
+    "copyright": "© 2024 FoodVery Coffee. Todos los derechos reservados."
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Diciembre 2024",
+    "introduction": "En FoodVery Coffee, respetamos tu privacidad y nos comprometemos a proteger tu información personal.",
+    "sections": {
+      "information": {
+        "title": "Información que Recopilamos",
+        "content": "Recopilamos información que nos proporcionas directamente, como cuando creas una cuenta, realizas un pedido o te comunicas con nosotros."
+      },
+      "usage": {
+        "title": "Cómo Utilizamos tu Información",
+        "content": "Utilizamos tu información para procesar pedidos, mejorar nuestros servicios y comunicarnos contigo sobre ofertas especiales."
+      },
+      "sharing": {
+        "title": "Compartir Información",
+        "content": "No vendemos ni compartimos tu información personal con terceros, excepto cuando sea necesario para cumplir con la ley."
+      },
+      "security": {
+        "title": "Seguridad",
+        "content": "Implementamos medidas de seguridad apropiadas para proteger tu información personal contra acceso no autorizado."
+      },
+      "contact": {
+        "title": "Contáctanos",
+        "content": "Si tienes preguntas sobre esta política de privacidad, por favor contáctanos."
+      }
+    }
+  }
+}

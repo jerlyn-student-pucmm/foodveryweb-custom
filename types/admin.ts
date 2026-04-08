@@ -1,0 +1,55 @@
+/** Backend-aligned types for admin API */
+
+export interface PlateDTO {
+  id: number;
+  uuid: string;
+  name: string;
+  description: string;
+  price: string;
+  category: string;
+  is_featured: boolean;
+  image: string;
+  created_at: string;
+  updated_at?: string | null;
+}
+
+export interface MenuResponseDTO {
+  plates: PlateDTO[];
+  total_count: number;
+  categories: string[];
+}
+
+export interface StaffStatusResponse {
+  user_uid: string;
+  is_employee: boolean;
+  is_admin: boolean;
+  is_staff: boolean;
+  role: string | null;
+}
+
+export interface TransactionsPageDTO {
+  items: PointTransactionDTO[];
+  total: number;
+  page: number;
+  page_size: number;
+  total_pages: number;
+}
+
+export interface AddPointsBody {
+  user_uid: string;
+  purchase_amount: number;
+}
+
+export interface PointTransactionDTO {
+  id: number;
+  uuid: string;
+  user_uid: string;
+  added_by: string;
+  points: number;
+  created_at: string;
+}
+
+export interface PlatePhotoUploadResponseDTO {
+  plate: PlateDTO;
+  image_url: string;
+}
