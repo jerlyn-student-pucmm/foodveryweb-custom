@@ -55,8 +55,9 @@ export const platesAPI = {
   },
 
   getCategories: async (): Promise<CategoriesResponse> => {
-    const raw = await fetchAPI<string[]>('/api/plates/categories');
-    return { categories: Array.isArray(raw) ? raw : [] };
+    const raw = await fetchAPI<string[] | CategoriesResponse>("/api/plates/categories");
+    if (Array.isArray(raw)) return { categories: raw };
+    return raw;
   },
 
   getPlateById: async (plateId: string): Promise<PlateByIdResponse> => {

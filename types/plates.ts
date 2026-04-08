@@ -21,7 +21,7 @@ export interface MenuResponse {
 export interface SpotlightedPlateResponse {
   /** Backend actual */
   spotlighted_plate?: Plate | null;
-  /** Compatibilidad */
+  /** Compatibilidad con respuestas que usan `plate` */
   plate?: Plate | null;
 }
 
