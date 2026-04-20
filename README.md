@@ -39,6 +39,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 Sitio público FoodVery (Next.js). Panel admin en `/admin` (Firebase + API).
 
+## Docker: Redis y rate limiting
+
+Compose incluye `redis` y la app depende de él. Límite por IP en `proxy.ts` (Next 16) con `REDIS_URL`, `RATE_LIMIT_ENABLED`, `RATE_LIMIT_REQUESTS`, `RATE_LIMIT_WINDOW_SECONDS` (mismos nombres que en la API). Sin `REDIS_URL` o con Redis caído, el proxy **no bloquea** (fail-open). En local sin Redis: `RATE_LIMIT_ENABLED=false` o `pnpm dev` con esas variables.
+
 ## Docker: reinicio programado
 
 `docker compose up -d` levanta el servicio `daily-restart`, que cada 24 h ejecuta `docker restart` sobre el contenedor del servicio `app` (detectado por etiquetas de Compose). Variables opcionales en `.env` o el entorno: `COMPOSE_PROJECT_NAME` (debe coincidir con el nombre de proyecto de Compose), `RESTART_INTERVAL_SECONDS`, `RESTART_TARGET_SERVICE`, o `RESTART_CONTAINER_NAME` si prefieres reiniciar por nombre fijo (p. ej. `foodveryweb-app-1`). Montar `/var/run/docker.sock` otorga control amplio sobre Docker en el host; valora alternativas (cron en el VPS) si ese riesgo no te encaja.
+
+El servicio `app` usa rotación de logs `json-file` (`max-size` / `max-file`). El sidecar monta `/var/lib/docker/containers` (ruta real del `LogPath` en **Linux**) y, con `TRUNCATE_CONTAINER_LOGS=1` (valor por defecto), intenta vaciar el log json del contenedor tras cada reinicio. En Docker Desktop macOS/Windows el montaje suele no coincidir con el `LogPath` real; pon `TRUNCATE_CONTAINER_LOGS=0` o confía solo en la rotación.

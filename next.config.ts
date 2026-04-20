@@ -5,6 +5,7 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
 const nextConfig: NextConfig = {
   output: 'standalone',
+  serverExternalPackages: ['ioredis'],
 };
 
 export default withNextIntl(nextConfig);
