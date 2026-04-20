@@ -8,6 +8,7 @@ import {
   Gift,
   LayoutDashboard,
   LogOut,
+  Ticket,
   UtensilsCrossed,
 } from "lucide-react";
 import type { StaffStatusResponse } from "@/types/admin";
@@ -17,6 +18,7 @@ const nav = [
   { href: "/admin/plates", label: "Platillos", icon: UtensilsCrossed },
   { href: "/admin/points", label: "Puntos", icon: Coins },
   { href: "/admin/rewards", label: "Recompensas", icon: Gift },
+  { href: "/admin/redemptions", label: "Canjes", icon: Ticket },
 ] as const;
 
 type AdminShellProps = {

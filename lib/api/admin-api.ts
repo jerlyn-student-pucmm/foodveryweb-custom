@@ -1,6 +1,7 @@
 import { getPublicApiUrl } from "@/lib/env";
 import type {
   AddPointsBody,
+  ClaimStaffRowDTO,
   LookupUserByEmailResponse,
   MenuResponseDTO,
   PlateDTO,
@@ -210,6 +211,20 @@ export const adminApi = {
       `/api/rewards/staff/uuid/${rewardUuid}`,
       token,
       body,
+      "PATCH"
+    ),
+
+  listClaimsStaff: (token: string, pendingOnly?: boolean) => {
+    const q =
+      pendingOnly === true ? "?pending_only=true" : pendingOnly === false ? "?pending_only=false" : "";
+    return apiGetJson<ClaimStaffRowDTO[]>(`/api/rewards/staff/claims${q}`, token);
+  },
+
+  deliverClaim: (token: string, claimedUuid: string) =>
+    apiSendJson<ClaimStaffRowDTO>(
+      `/api/rewards/staff/claims/uuid/${claimedUuid}/deliver`,
+      token,
+      {},
       "PATCH"
     ),
 

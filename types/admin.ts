@@ -68,3 +68,16 @@ export interface RewardDTO {
   image_url: string | null;
   created_at: string;
 }
+
+/** Staff list of reward redemptions (counter / admin) */
+export interface ClaimStaffRowDTO {
+  uuid: string;
+  receipt_code: string;
+  claimed_at: string;
+  delivered_at: string | null;
+  delivered_by_uid: string | null;
+  user_uid: string;
+  user_nickname: string | null;
+  reward_name: string;
+  points_spent: number;
+}
