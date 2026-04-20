@@ -38,3 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # foodveryweb
 
 Sitio público FoodVery (Next.js). Panel admin en `/admin` (Firebase + API).
+
+## Docker: reinicio programado
+
+`docker compose up -d` levanta el servicio `daily-restart`, que cada 24 h ejecuta `docker restart` sobre el contenedor del servicio `app` (detectado por etiquetas de Compose). Variables opcionales en `.env` o el entorno: `COMPOSE_PROJECT_NAME` (debe coincidir con el nombre de proyecto de Compose), `RESTART_INTERVAL_SECONDS`, `RESTART_TARGET_SERVICE`, o `RESTART_CONTAINER_NAME` si prefieres reiniciar por nombre fijo (p. ej. `foodveryweb-app-1`). Montar `/var/run/docker.sock` otorga control amplio sobre Docker en el host; valora alternativas (cron en el VPS) si ese riesgo no te encaja.

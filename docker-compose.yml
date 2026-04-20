@@ -11,3 +11,18 @@ services:
     environment:
       - NODE_ENV=production
     restart: unless-stopped
+
+  daily-restart:
+    image: docker:27-cli
+    entrypoint: ["/bin/sh", "/scripts/daily-restart.sh"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./.docker/scripts/daily-restart.sh:/scripts/daily-restart.sh:ro
+    environment:
+      COMPOSE_PROJECT_NAME: ${COMPOSE_PROJECT_NAME:-foodveryweb}
+      RESTART_TARGET_SERVICE: ${RESTART_TARGET_SERVICE:-app}
+      RESTART_INTERVAL_SECONDS: ${RESTART_INTERVAL_SECONDS:-86400}
+      RESTART_CONTAINER_NAME: ${RESTART_CONTAINER_NAME:-}
+    depends_on:
+      - app
+    restart: unless-stopped
