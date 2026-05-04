@@ -15,8 +15,8 @@
     "firebase": "^11.10.0",
     "ioredis": "^5.10.1",
     "lucide-react": "^0.548.0",
-    "next": "^9.3.3",
-    "next-intl": "^0.0.1",
+    "next": "^16.0.0",
+    "next-intl": "^4.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "tailwind-merge": "^3.4.0"
