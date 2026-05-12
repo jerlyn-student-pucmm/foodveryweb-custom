@@ -23,7 +23,7 @@ export function AboutSection() {
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
               <Image 
                 src="/cozy-coffee-shop.jpg" 
-                alt="FoodVery Coffee interior" 
+                alt="FoodVery Café interior" 
                 fill
                 className="object-cover" 
               />

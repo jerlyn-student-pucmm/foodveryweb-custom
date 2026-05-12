@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "FoodVery",
-    "subtitle": "Coffee",
+    "subtitle": "Café",
     "description": "Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
     "menuButton": "View Menu",
     "orderButton": "Order Now"
@@ -25,7 +25,7 @@
   "about": {
     "title": "About Us",
     "subtitle": "An authentic experience in Las Terrenas",
-    "description": "At FoodVery Coffee, we are dedicated to providing a unique gastronomic experience that combines Dominican tradition with fresh ingredients and modern techniques. Located in the heart of Las Terrenas, we are the perfect place to start your day with the best breakfast and coffee.",
+    "description": "At FoodVery Café, we are dedicated to providing a unique gastronomic experience that combines Dominican tradition with fresh ingredients and modern techniques. Located in the heart of Las Terrenas, we are the perfect place to start your day with the best breakfast and coffee.",
     "values": {
       "fresh": {
         "title": "Fresh Ingredients",
@@ -58,7 +58,7 @@
   },
   "downloadApp": {
     "title": "Download the App",
-    "subtitle": "Get the FoodVery Coffee app for easy ordering, exclusive deals, and seamless pickup. Available on iOS and Android.",
+    "subtitle": "Get the FoodVery Café app for easy ordering, exclusive deals, and seamless pickup. Available on iOS and Android.",
     "features": {
       "easyOrdering": {
         "title": "Easy Ordering",
@@ -83,20 +83,73 @@
     "subtitle": "Join us for breakfast and coffee that will make your morning special",
     "button": "Visit Us Today"
   },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "visit": "Visit",
+    "services": "Services",
+    "menu": "Menu",
+    "reserve": "Reserve / Order",
+    "instagram": "Instagram",
+    "logo": "FoodVery Café Logo"
+  },
+  "coffee": {
+    "tagline": "Flavors that excite + ambiance that captivates"
+  },
+  "visit": {
+    "title": "Visit Us",
+    "location": "Location",
+    "address": "Main Street, Las Terrenas",
+    "city": "Samaná, Dominican Republic",
+    "hours": "Hours",
+    "schedule": "Mon - Sun: 7:00 - 22:00",
+    "contact": "Contact",
+    "phone": "+1 (809) 943-6616",
+    "email": "info@foodvery.com.do",
+    "openMaps": "Open in Maps",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  },
+  "services": {
+    "title": "Services",
+    "intro": "At FoodVery we offer various services designed for the community and visitors:",
+    "breakfast": {
+      "title": "Breakfast & Coffee",
+      "description": "Daily service at the location with take-out options and delivery on request."
+    },
+    "apartments": {
+      "title": "Apartment Rentals",
+      "description": "We manage short-term tourist rentals in the area — ask about availability."
+    },
+    "catering": {
+      "title": "Catering & Events",
+      "description": "We offer catering for small events and service for corporate or social gatherings."
+    },
+    "reserve": "Reserve / Consult",
+    "viewMenu": "View Menu"
+  },
   "footer": {
-    "description": "FoodVery Coffee - Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
+    "description": "Your daily dose of tropical energy. Proudly serving the Las Terrenas community since 2025.",
     "links": {
       "menu": "Menu",
       "about": "About",
-      "contact": "Contact",
+      "jobs": "Jobs",
       "privacy": "Privacy"
     },
-    "copyright": "© 2024 FoodVery Coffee. All rights reserved."
+    "copyright": "© 2024 FoodVery Café. All rights reserved."
+  },
+  "images": {
+    "heroAlt": "Beachfront café in Las Terrenas",
+    "coffeeBaristaAlt": "Barista pouring coffee",
+    "coffeeInteriorAlt": "FoodVery Café interior",
+    "appStoreAlt": "Download on the App Store",
+    "googlePlayAlt": "Google Play - coming soon",
+    "downloadApps": "Download our apps and explore great benefits"
   },
   "privacy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: December 2024",
-    "introduction": "At FoodVery Coffee, we respect your privacy and are committed to protecting your personal information.",
+    "introduction": "At FoodVery Café, we respect your privacy and are committed to protecting your personal information.",
     "sections": {
       "information": {
         "title": "Information We Collect",

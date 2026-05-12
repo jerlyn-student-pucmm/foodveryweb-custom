@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "FoodVery",
-    "subtitle": "Coffee",
+    "subtitle": "Café",
     "description": "Desayuno y café elaborados con cuidado en Las Terrenas, República Dominicana",
     "menuButton": "Ver Menú",
     "orderButton": "Pedir Ahora"
@@ -25,7 +25,7 @@
   "about": {
     "title": "Sobre Nosotros",
     "subtitle": "Una experiencia auténtica en Las Terrenas",
-    "description": "En FoodVery Coffee, nos dedicamos a brindar una experiencia gastronómica única que combina la tradición dominicana con ingredientes frescos y técnicas modernas. Ubicados en el corazón de Las Terrenas, somos el lugar perfecto para comenzar tu día con el mejor desayuno y café.",
+    "description": "En FoodVery Café, nos dedicamos a brindar una experiencia gastronómica única que combina la tradición dominicana con ingredientes frescos y técnicas modernas. Ubicados en el corazón de Las Terrenas, somos el lugar perfecto para comenzar tu día con el mejor desayuno y café.",
     "values": {
       "fresh": {
         "title": "Ingredientes Frescos",
@@ -58,7 +58,7 @@
   },
   "downloadApp": {
     "title": "Descarga la App",
-    "subtitle": "Obtén la app de FoodVery Coffee para pedidos fáciles, ofertas exclusivas y recogida sin complicaciones. Disponible en iOS y Android.",
+    "subtitle": "Obtén la app de FoodVery Café para pedidos fáciles, ofertas exclusivas y recogida sin complicaciones. Disponible en iOS y Android.",
     "features": {
       "easyOrdering": {
         "title": "Pedidos Fáciles",
@@ -83,20 +83,73 @@
     "subtitle": "Únete a nosotros para desayuno y café que harán especial tu mañana",
     "button": "Visítanos Hoy"
   },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "visit": "Visítanos",
+    "services": "Servicios",
+    "menu": "Menú",
+    "reserve": "Reservar / Pedir",
+    "instagram": "Instagram",
+    "logo": "FoodVery Café Logo"
+  },
+  "coffee": {
+    "tagline": "Sabores que emocionan + ambientación que enamora"
+  },
+  "visit": {
+    "title": "Visítanos",
+    "location": "Ubicación",
+    "address": "Calle Principal, Las Terrenas",
+    "city": "Samaná, República Dominicana",
+    "hours": "Horarios",
+    "schedule": "Lun - Dom: 7:00 - 22:00",
+    "contact": "Contacto",
+    "phone": "+1 (809) 943-6616",
+    "email": "info@foodvery.com.do",
+    "openMaps": "Abrir en Maps",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  },
+  "services": {
+    "title": "Servicios",
+    "intro": "En FoodVery ofrecemos varios servicios pensados para la comunidad y visitantes:",
+    "breakfast": {
+      "title": "Desayunos & Café",
+      "description": "Servicio diario en el local con opciones para llevar y entrega por pedido."
+    },
+    "apartments": {
+      "title": "Renta de Apartamentos",
+      "description": "Gestionamos alquileres turísticos de corta estancia en la zona — pregunta por disponibilidad."
+    },
+    "catering": {
+      "title": "Catering y Eventos",
+      "description": "Ofrecemos catering para eventos pequeños y servicio para reuniones corporativas o sociales."
+    },
+    "reserve": "Reservar / Consultar",
+    "viewMenu": "Ver Menú"
+  },
   "footer": {
-    "description": "FoodVery Coffee - Desayuno y café elaborados con cuidado en Las Terrenas, República Dominicana",
+    "description": "Tu dosis diaria de energía tropical. Sirviendo con orgullo a la comunidad de Las Terrenas desde 2025.",
     "links": {
       "menu": "Menú",
       "about": "Nosotros",
-      "contact": "Contacto",
+      "jobs": "Empleo",
       "privacy": "Privacidad"
     },
-    "copyright": "© 2024 FoodVery Coffee. Todos los derechos reservados."
+    "copyright": "© 2024 FoodVery Café. Todos los derechos reservados."
+  },
+  "images": {
+    "heroAlt": "Cafetería frente a la playa en Las Terrenas",
+    "coffeeBaristaAlt": "Barista preparando café",
+    "coffeeInteriorAlt": "Interior de FoodVery Café",
+    "appStoreAlt": "Descargar en la App Store",
+    "googlePlayAlt": "Google Play - próximamente",
+    "downloadApps": "Descarga nuestras apps y explora grandes beneficios"
   },
   "privacy": {
     "title": "Política de Privacidad",
     "lastUpdated": "Última actualización: Diciembre 2024",
-    "introduction": "En FoodVery Coffee, respetamos tu privacidad y nos comprometemos a proteger tu información personal.",
+    "introduction": "En FoodVery Café, respetamos tu privacidad y nos comprometemos a proteger tu información personal.",
     "sections": {
       "information": {
         "title": "Información que Recopilamos",

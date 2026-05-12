@@ -20,20 +20,20 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "FoodVery Coffee - Breakfast and Coffee in Las Terrenas, Dominican Republic",
+  title: "FoodVery Café - Breakfast and Coffee in Las Terrenas, Dominican Republic",
   description: "Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic. Artisanal coffee, tropical bites, and authentic Dominican flavors.",
   keywords: ["coffee", "breakfast", "Las Terrenas", "Dominican Republic", "restaurant", "café", "foodvery"],
   openGraph: {
-    title: "FoodVery Coffee - Breakfast and Coffee in Las Terrenas",
+    title: "FoodVery Café - Breakfast and Coffee in Las Terrenas",
     description: "Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
     url: "https://foodvery.com.do",
-    siteName: "FoodVery Coffee",
+    siteName: "FoodVery Café",
     locale: "es_DO",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "FoodVery Coffee - Breakfast and Coffee in Las Terrenas",
+    title: "FoodVery Café - Breakfast and Coffee in Las Terrenas",
     description: "Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
   },
   alternates: {
@@ -59,7 +59,7 @@ export default async function RootLayout({
       <body className="font-sans bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 transition-colors duration-300">
         <JsonLdSchema />
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="fixed top-4 right-4 z-50">
+          <div className="fixed top-24 right-8 z-[9999]">
             <LanguageSwitcher />
           </div>
           {children}

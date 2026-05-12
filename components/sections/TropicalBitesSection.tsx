@@ -11,7 +11,7 @@ export function TropicalBitesSection() {
       <section className="py-24 bg-primary/5 dark:bg-primary/10" id="bites">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
-            <p className="text-red-500">Error loading menu: {error.message}</p>
+            <p className="text-red-500">Error al cargar el menú: {error.message}</p>
           </div>
         </div>
       </section>
@@ -23,19 +23,19 @@ export function TropicalBitesSection() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">
-            Seasonal Flavors
+            Sabores de temporada
           </span>
           <h2 className="font-display text-4xl md:text-5xl text-gray-900 dark:text-white">
-            Tropical Bites
+            Favorito de todos
           </h2>
         </div>
         {loading ? (
           <div className="text-center py-12">
-            <p className="text-gray-600 dark:text-gray-400">Loading menu...</p>
+            <p className="text-gray-600 dark:text-gray-400">Cargando menú...</p>
           </div>
         ) : plates.length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-gray-600 dark:text-gray-400">No items available</p>
+            <p className="text-gray-600 dark:text-gray-400">No hay platillos disponibles</p>
           </div>
         ) : (
           <div className="grid md:grid-cols-3 gap-8">

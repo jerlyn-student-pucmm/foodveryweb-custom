@@ -1,7 +1,7 @@
 export default {
   "hero": {
     "title": "FoodVery",
-    "subtitle": "Coffee",
+    "subtitle": "Café",
     "description": "Desayuno y café elaborados con cuidado en Las Terrenas, República Dominicana",
     "menuButton": "Ver Menú",
     "orderButton": "Pedir Ahora"
@@ -25,7 +25,7 @@ export default {
   "about": {
     "title": "Sobre Nosotros",
     "subtitle": "Una experiencia auténtica en Las Terrenas",
-    "description": "En FoodVery Coffee, nos dedicamos a brindar una experiencia gastronómica única que combina la tradición dominicana con ingredientes frescos y técnicas modernas. Ubicados en el corazón de Las Terrenas, somos el lugar perfecto para comenzar tu día con el mejor desayuno y café.",
+    "description": "En FoodVery Café, nos dedicamos a brindar una experiencia gastronómica única que combina la tradición dominicana con ingredientes frescos y técnicas modernas. Ubicados en el corazón de Las Terrenas, somos el lugar perfecto para comenzar tu día con el mejor desayuno y café.",
     "values": {
       "fresh": {
         "title": "Ingredientes Frescos",
@@ -58,7 +58,7 @@ export default {
   },
   "downloadApp": {
     "title": "Descarga la App",
-    "subtitle": "Obtén la app de FoodVery Coffee para pedidos fáciles, ofertas exclusivas y recogida sin complicaciones. Disponible en iOS y Android.",
+    "subtitle": "Obtén la app de FoodVery Café para pedidos fáciles, ofertas exclusivas y recogida sin complicaciones. Disponible en iOS y Android.",
     "features": {
       "easyOrdering": {
         "title": "Pedidos Fáciles",
@@ -84,19 +84,19 @@ export default {
     "button": "Visítanos Hoy"
   },
   "footer": {
-    "description": "FoodVery Coffee - Desayuno y café elaborados con cuidado en Las Terrenas, República Dominicana",
+    "description": "FoodVery Café - Desayuno y café elaborados con cuidado en Las Terrenas, República Dominicana",
     "links": {
       "menu": "Menú",
       "about": "Nosotros",
       "contact": "Contacto",
       "privacy": "Privacidad"
     },
-    "copyright": "© 2024 FoodVery Coffee. Todos los derechos reservados."
+    "copyright": "© 2024 FoodVery Café. Todos los derechos reservados."
   },
   "privacy": {
     "title": "Política de Privacidad",
     "lastUpdated": "Última actualización: Diciembre 2024",
-    "introduction": "En FoodVery Coffee, respetamos tu privacidad y nos comprometemos a proteger tu información personal.",
+    "introduction": "En FoodVery Café, respetamos tu privacidad y nos comprometemos a proteger tu información personal.",
     "sections": {
       "information": {
         "title": "Información que Recopilamos",

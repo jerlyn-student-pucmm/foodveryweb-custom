@@ -5,11 +5,11 @@ export function JsonLdSchema() {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "@id": `${baseUrl}#organization`,
-    "name": "FoodVery Coffee",
+    "name": "FoodVery Café",
     "alternateName": "FoodVery",
     "url": baseUrl,
     "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBAqaa3i-5PH7uQIxE4ElbnVO1LTDEHTqNgp4dbpig5OMV5Gwwf7aqrIdkqQIK6ROL5XmrGN6UlSyKGvnatfOAOPwIujGBubX_UkzJeJY414U0hv377DQLz8QIbQ5gF3q90e8BbdhP94bkJjCAE-J579tJErdq_M8ENrWkZT7JFTJhzEx7AMf8oca467600AO8kPS4sUEd0WEUZo9mMtOfocAiUfuPzWdT8FWe-BgEL9s-2_kqcF3jSx4xCcdfKMkxs4hdNTw2E5F4",
-    "description": "Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
+    "description": "Desayunos y café elaborados con cuidado en Las Terrenas, República Dominicana",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Calle Principal",
@@ -23,7 +23,7 @@ export function JsonLdSchema() {
       "longitude": "-69.5333"
     },
     "telephone": "+1 (809) 555-0123",
-    "email": "hello@foodverycoffee.com",
+    "email": "info@foodvery.com.do",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -54,7 +54,7 @@ export function JsonLdSchema() {
     "@type": "WebSite",
     "@id": `${baseUrl}#website`,
     "url": baseUrl,
-    "name": "FoodVery Coffee",
+    "name": "FoodVery Café",
     "description": "Breakfast and coffee crafted with care in Las Terrenas, Dominican Republic",
     "publisher": {
       "@id": `${baseUrl}#organization`
@@ -76,31 +76,31 @@ export function JsonLdSchema() {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
+        "name": "Inicio",
         "item": baseUrl
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Coffee",
+        "name": "Café",
         "item": `${baseUrl}#coffee`
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Tropical Bites",
+        "name": "Bocados Tropicales",
         "item": `${baseUrl}#bites`
       },
       {
         "@type": "ListItem",
         "position": 4,
-        "name": "Visit Us",
+        "name": "Visítanos",
         "item": `${baseUrl}#visit`
       },
       {
         "@type": "ListItem",
         "position": 5,
-        "name": "Privacy Policy",
+        "name": "Política de Privacidad",
         "item": `${baseUrl}/privacy`
       }
     ]
@@ -114,43 +114,43 @@ export function JsonLdSchema() {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Coffee",
-        "description": "Artisanal Coffee From Our Mountains - 100% Organic Arabica Beans",
+        "name": "Café",
+        "description": "Café artesanal de nuestras montañas - 100% granos Arábica orgánicos",
         "url": `${baseUrl}#coffee`
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Tropical Bites",
-        "description": "Seasonal Flavors - Fresh breakfast and tropical bites menu",
+        "name": "Bocados Tropicales",
+        "description": "Sabores de temporada - Menú de desayunos y bocados tropicales",
         "url": `${baseUrl}#bites`
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Visit Us",
-        "description": "Visit Our Paradise - Location, hours and contact information",
+        "name": "Visítanos",
+        "description": "Visita nuestro paraíso - Ubicación, horarios y contacto",
         "url": `${baseUrl}#visit`
       },
       {
         "@type": "ListItem",
         "position": 4,
-        "name": "Menu",
-        "description": "Browse our complete menu with breakfast and coffee options",
+        "name": "Menú",
+        "description": "Consulta nuestro menú completo con opciones de desayuno y café",
         "url": `${baseUrl}#bites`
       },
       {
         "@type": "ListItem",
         "position": 5,
-        "name": "Order Now",
-        "description": "Get the FoodVery Coffee app for easy ordering, exclusive deals, and seamless pickup",
+        "name": "Pedir Ahora",
+        "description": "Obtén la app de FoodVery Café para pedidos fáciles, ofertas exclusivas y recogida sin complicaciones",
         "url": baseUrl
       },
       {
         "@type": "ListItem",
         "position": 6,
-        "name": "Privacy Policy",
-        "description": "FoodVery Coffee Privacy Policy and Terms of Service",
+        "name": "Política de Privacidad",
+        "description": "Política de privacidad y términos de FoodVery Café",
         "url": `${baseUrl}/privacy`
       }
     ]
@@ -162,15 +162,15 @@ export function JsonLdSchema() {
     "@type": "WebPage",
     "@id": `${baseUrl}#coffee`,
     "url": `${baseUrl}#coffee`,
-    "name": "Artisanal Coffee From Our Mountains",
-    "description": "We source our beans from the high-altitude plantations of the Cibao region. Each cup is a tribute to the rich Dominican terroir, roasted in small batches to preserve its natural chocolate and citrus notes.",
+    "name": "Café artesanal de nuestras montañas",
+    "description": "Seleccionamos granos de altura de la región; cada taza es un tributo al terroir dominicano, tostada en pequeños lotes para preservar sus notas naturales.",
     "isPartOf": {
       "@id": `${baseUrl}#website`
     },
     "about": {
       "@type": "Product",
-      "name": "Artisanal Coffee",
-      "description": "100% Organic Arabica Beans from Dominican Republic",
+      "name": "Café artesanal",
+      "description": "100% granos Arábica orgánicos de la República Dominicana",
       "brand": {
         "@id": `${baseUrl}#organization`
       }
@@ -182,17 +182,17 @@ export function JsonLdSchema() {
     "@type": "WebPage",
     "@id": `${baseUrl}#bites`,
     "url": `${baseUrl}#bites`,
-    "name": "Tropical Bites - Seasonal Flavors",
-    "description": "Fresh breakfast and tropical bites menu featuring seasonal flavors from Las Terrenas",
+    "name": "Bocados Tropicales - Sabores de temporada",
+    "description": "Menú de desayunos y bocados tropicales con sabores de temporada de Las Terrenas",
     "isPartOf": {
       "@id": `${baseUrl}#website`
     },
     "about": {
       "@type": "Menu",
-      "name": "Tropical Bites Menu",
+      "name": "Menú de Bocados Tropicales",
       "hasMenuSection": {
         "@type": "MenuSection",
-        "name": "Breakfast & Tropical Bites"
+        "name": "Desayunos & Bocados Tropicales"
       }
     }
   };
@@ -202,8 +202,8 @@ export function JsonLdSchema() {
     "@type": "WebPage",
     "@id": `${baseUrl}#visit`,
     "url": `${baseUrl}#visit`,
-    "name": "Visit Our Paradise",
-    "description": "Visit FoodVery Coffee in Las Terrenas, Samaná. Opening hours, location and contact information.",
+    "name": "Visítanos",
+    "description": "Visita FoodVery Café en Las Terrenas, Samaná. Horarios, ubicación e información de contacto.",
     "isPartOf": {
       "@id": `${baseUrl}#website`
     }
@@ -214,26 +214,26 @@ export function JsonLdSchema() {
     "@context": "https://schema.org",
     "@type": "SiteNavigationElement",
     "@id": `${baseUrl}#navigation`,
-    "name": "Main Navigation",
+    "name": "Navegación Principal",
     "url": baseUrl,
     "hasPart": [
       {
         "@type": "SiteNavigationElement",
-        "name": "Coffee",
+        "name": "Café",
         "url": `${baseUrl}#coffee`,
-        "description": "Artisanal Coffee From Our Mountains"
+        "description": "Café artesanal de nuestras montañas"
       },
       {
         "@type": "SiteNavigationElement",
-        "name": "Tropical Bites",
+        "name": "Bocados Tropicales",
         "url": `${baseUrl}#bites`,
-        "description": "Seasonal Flavors Menu"
+        "description": "Menú de sabores de temporada"
       },
       {
         "@type": "SiteNavigationElement",
-        "name": "Visit Us",
+        "name": "Visítanos",
         "url": `${baseUrl}#visit`,
-        "description": "Location, Hours & Contact"
+        "description": "Ubicación, horarios y contacto"
       }
     ]
   };
