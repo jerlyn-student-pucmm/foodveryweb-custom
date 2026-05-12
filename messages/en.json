@@ -99,7 +99,7 @@
   "visit": {
     "title": "Visit Us",
     "location": "Location",
-    "address": "Main Street, Las Terrenas",
+    "address": "Calle Duarte 133, Las Terrenas",
     "city": "Samaná, Dominican Republic",
     "hours": "Hours",
     "schedule": "Mon - Sun: 7:00 - 22:00",
@@ -144,7 +144,7 @@
     "coffeeInteriorAlt": "FoodVery Café interior",
     "appStoreAlt": "Download on the App Store",
     "googlePlayAlt": "Google Play - coming soon",
-    "downloadApps": "Download our apps and explore great benefits"
+    "downloadApps": "Download our app and explore great benefits"
   },
   "privacy": {
     "title": "Privacy Policy",
